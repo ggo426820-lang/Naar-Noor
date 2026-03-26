@@ -20,7 +20,7 @@ export class ChefsComponent {
     {
       name: 'Maya Sherpa',
       role: 'Sous Chef',
-      image: 'https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop',
+      image: 'assets/6527c082-4110-43ea-9d91-0bf6f431ffb9_3840w.jpg',
       bio: 'A specialist in Himalayan spices and marinades, Maya\'s delicate touch balances the intense heat of the grill with subtle, fragrant undertones that define our signature dishes.'
     }
   ];
