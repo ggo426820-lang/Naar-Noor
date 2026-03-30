@@ -1,4 +1,4 @@
-# Multi-stage build for The Lost Yeti Kitchen & Bar
+# Multi-stage build for Naar & Noor Restaurant
 
 # Stage 1: Build the Angular application
 FROM node:18-alpine AS build
@@ -8,8 +8,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install all dependencies (including dev for build)
+RUN npm ci
 
 # Copy source code
 COPY . .
