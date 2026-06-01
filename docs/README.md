@@ -1,87 +1,80 @@
-# 🍽️ Naar & Noor - Documentation
+# 📚 Documentation Index
 
-Welcome to the Naar & Noor project documentation. This is a full-stack restaurant management application built with modern technologies.
+Welcome to the Naar & Noor documentation. This folder contains comprehensive guides for development, deployment, and troubleshooting.
 
-## 📚 Documentation Index
+## 🎯 Quick Navigation
 
-### 🎯 Start Here
-- **[Run Both Apps](./RUN_BOTH_APPS.md)** ⭐ **START HERE** - Complete guide to run frontend & backend
-- **[Getting Started](./GETTING_STARTED.md)** - Quick setup and installation guide
+### 🚀 Getting Started
+- **[Getting Started](./GETTING_STARTED.md)** - Installation and setup guide
+- **[Project Structure](./PROJECT_STRUCTURE.md)** - Codebase organization
 
 ### 📖 Development Guides
-- **[Project Structure](./PROJECT_STRUCTURE.md)** - Overview of the codebase organization
-- **[Architecture](./ARCHITECTURE.md)** - System design and technical architecture
-- **[Frontend Guide](./FRONTEND.md)** - Angular frontend development guide
-- **[Backend Guide](./BACKEND.md)** - .NET backend development guide
+- **[Architecture](./ARCHITECTURE.md)** - System design and patterns
+- **[Frontend Guide](./FRONTEND.md)** - Angular development
+- **[Backend Guide](./BACKEND.md)** - .NET development
 
 ### 📚 Reference
-- **[API Documentation](./API.md)** - REST API endpoints and usage
-- **[Database](./DATABASE.md)** - Database schema and migrations
-- **[Deployment](./DEPLOYMENT.md)** - Deployment and production setup
+- **[API Documentation](./API.md)** - REST API endpoints
+- **[Database](./DATABASE.md)** - Schema and migrations
+- **[Deployment](./DEPLOYMENT.md)** - Production setup
+
+### 🆘 Support
+- **[Troubleshooting](./TROUBLESHOOTING.md)** - Common issues
 - **[Contributing](./CONTRIBUTING.md)** - Contribution guidelines
-- **[Troubleshooting](./TROUBLESHOOTING.md)** - Common issues and solutions
-
-## 🚀 Quick Start
-
-### ⚡ Fastest Way (5 Minutes)
-
-**See [Run Both Apps](./RUN_BOTH_APPS.md) for complete guide**
-
-### Prerequisites
-- Node.js 18+ (for frontend)
-- .NET 8.0 SDK (for backend)
-- SQL Server
-- Git
-
-### Terminal 1 - Backend
-```bash
-cd api-server
-dotnet restore
-dotnet run --project src/NaarNoor.API/NaarNoor.API.csproj
-```
-✅ Backend runs at: `http://localhost:5000`
-
-### Terminal 2 - Frontend
-```bash
-cd naar-noor
-npm install
-npm run dev
-```
-✅ Frontend runs at: `http://localhost:4200`
-
-### Verify Connection
-- Backend: `http://localhost:5000/swagger`
-- Frontend: `http://localhost:4200`
-- API Health: `http://localhost:5000/health`
-
-## 📋 Project Overview
-
-**Naar & Noor** is a comprehensive restaurant management system featuring:
-
-- 🎨 Modern Angular frontend with Tailwind CSS
-- 🔧 Robust .NET 8 backend with clean architecture
-- 📊 Entity Framework Core for data management
-- 🔐 RESTful API with Swagger documentation
-- 📱 Responsive design for all devices
-
-## 🏗️ Tech Stack
-
-### Frontend
-- **Framework**: Angular 18
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Build Tool**: Angular CLI
-
-### Backend
-- **Framework**: ASP.NET Core 8
-- **ORM**: Entity Framework Core
-- **Database**: SQL Server
-- **Architecture**: Clean Architecture (CQRS pattern)
-
-## 📞 Support
-
-For questions or issues, please refer to the [Troubleshooting](./TROUBLESHOOTING.md) guide or check the relevant documentation section.
 
 ---
 
-**Last Updated**: May 2026
+## 📋 Document Overview
+
+| Document | Size | Purpose |
+|----------|------|---------|
+| GETTING_STARTED.md | Setup | Installation and initial configuration |
+| PROJECT_STRUCTURE.md | Reference | Codebase organization and file structure |
+| ARCHITECTURE.md | Design | System architecture and design patterns |
+| FRONTEND.md | Development | Angular frontend development guide |
+| BACKEND.md | Development | .NET backend development guide |
+| API.md | Reference | Complete REST API documentation |
+| DATABASE.md | Reference | Database schema and migrations |
+| DEPLOYMENT.md | Operations | Production deployment guide |
+| TROUBLESHOOTING.md | Support | Common issues and solutions |
+| CONTRIBUTING.md | Community | Contribution guidelines |
+
+---
+
+## 🎓 Learning Path
+
+### For New Developers
+1. Start with [Getting Started](./GETTING_STARTED.md)
+2. Review [Project Structure](./PROJECT_STRUCTURE.md)
+3. Read [Architecture](./ARCHITECTURE.md)
+4. Choose your path:
+   - **Frontend**: [Frontend Guide](./FRONTEND.md)
+   - **Backend**: [Backend Guide](./BACKEND.md)
+
+### For API Integration
+1. Read [API Documentation](./API.md)
+2. Check [Troubleshooting](./TROUBLESHOOTING.md) if needed
+
+### For Deployment
+1. Review [Deployment](./DEPLOYMENT.md)
+2. Check [Database](./DATABASE.md) for schema info
+
+---
+
+## 🔗 External Resources
+
+- **GitHub Repository**: https://github.com/Mostafa-SAID7/Naar-Noor
+- **Live Demo**: https://naar-noor.vercel.app
+- **API Swagger**: http://localhost:5000/swagger (local)
+
+---
+
+## 📞 Need Help?
+
+1. **Check Troubleshooting**: [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
+2. **Search Issues**: [GitHub Issues](https://github.com/Mostafa-SAID7/Naar-Noor/issues)
+3. **Ask Questions**: [GitHub Discussions](https://github.com/Mostafa-SAID7/Naar-Noor/discussions)
+
+---
+
+**Last Updated**: June 2026

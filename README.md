@@ -1,37 +1,241 @@
-# Naar-Noor
+# 🍽️ Naar & Noor
 
-## Overview
-Naar-Noor is a full‑stack application that provides *[brief description of the app’s purpose – e.g., a platform for managing ...]*. It combines a backend API with a modern frontend, a relational database, and deployment scripts to run in various environments.
+> A modern, full-stack restaurant management application built with Angular and .NET Core
 
-## Table of Contents
-- [Getting Started](docs/GETTING_STARTED.md)
-- [Project Structure](docs/PROJECT_STRUCTURE.md)
-- [Architecture](docs/ARCHITECTURE.md)
-- [Backend Details](docs/BACKEND.md)
-- [Frontend Details](docs/FRONTEND.md)
-- [API Documentation](docs/API.md)
-- [Database Schema](docs/DATABASE.md)
-- [Deployment Guide](docs/DEPLOYMENT.md)
-- [Running Both Apps](docs/RUN_BOTH_APPS.md)
-- [Troubleshooting](docs/TROUBLESHOOTING.md)
-- [Contributing](CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+[![GitHub](https://img.shields.io/badge/github-Naar--Noor-black?logo=github)](https://github.com/Mostafa-SAID7/Naar-Noor)
+[![Deployment](https://img.shields.io/badge/deployment-Vercel%20%26%20Azure-success)](https://naar-noor.vercel.app)
 
-## Quick Start
-1. Install prerequisites – see [Getting Started](docs/GETTING_STARTED.md).
-2. Configure the environment variables as described in the setup section.
-3. Run the backend server:
-   ```bash
-   cd api-server
-   npm install
-   npm start
-   ```
-4. Run the frontend:
-   ```bash
-   cd naar-noor
-   npm install
-   npm run dev
-   ```
-5. Open `http://localhost:3000` in your browser.
+## 🎯 Overview
 
-## License
-See the `LICENSE` file in the repository for licensing information.
+Naar & Noor is a comprehensive restaurant management system that streamlines operations from menu management to customer reservations and orders. Built with modern technologies and clean architecture principles.
+
+### ✨ Key Features
+
+- 🎨 **Modern UI** - Responsive Angular frontend with Tailwind CSS
+- 🔧 **Robust API** - RESTful backend with Swagger documentation
+- 📊 **Database** - SQL Server with Entity Framework Core
+- 🔐 **Clean Architecture** - CQRS pattern with MediatR
+- 📱 **Mobile Ready** - Fully responsive design
+- ⚡ **Performance** - Optimized builds and caching
+- 🚀 **Deployment Ready** - Vercel & Azure configured
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Node.js** 18+ ([Download](https://nodejs.org/))
+- **.NET 8.0 SDK** ([Download](https://dotnet.microsoft.com/download))
+- **SQL Server** (Local or Remote)
+- **Git** ([Download](https://git-scm.com/))
+
+### Installation (5 Minutes)
+
+#### 1. Clone Repository
+```bash
+git clone https://github.com/Mostafa-SAID7/Naar-Noor.git
+cd Naar-Noor
+```
+
+#### 2. Backend Setup
+```bash
+cd api-server
+dotnet restore
+dotnet run --project src/NaarNoor.API/NaarNoor.API.csproj
+```
+✅ Backend: `http://localhost:5000`
+
+#### 3. Frontend Setup (New Terminal)
+```bash
+cd naar-noor
+npm install
+npm run dev
+```
+✅ Frontend: `http://localhost:4200`
+
+### Verify Installation
+
+- **Backend API**: http://localhost:5000/swagger
+- **Frontend**: http://localhost:4200
+- **Health Check**: http://localhost:5000/health
+
+---
+
+## 📚 Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [Getting Started](docs/GETTING_STARTED.md) | Detailed setup instructions |
+| [Project Structure](docs/PROJECT_STRUCTURE.md) | Codebase organization |
+| [Architecture](docs/ARCHITECTURE.md) | System design & patterns |
+| [API Reference](docs/API.md) | Complete API documentation |
+| [Frontend Guide](docs/FRONTEND.md) | Angular development guide |
+| [Backend Guide](docs/BACKEND.md) | .NET development guide |
+| [Database](docs/DATABASE.md) | Schema & migrations |
+| [Deployment](docs/DEPLOYMENT.md) | Production setup |
+| [Troubleshooting](docs/TROUBLESHOOTING.md) | Common issues & solutions |
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+```
+Angular 18 • TypeScript • Tailwind CSS • RxJS
+```
+
+### Backend
+```
+ASP.NET Core 8 • Entity Framework Core • SQL Server • MediatR
+```
+
+### Architecture
+```
+Clean Architecture • CQRS Pattern • Dependency Injection • Repository Pattern
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Naar-Noor/
+├── api-server/                 # .NET Backend
+│   ├── src/
+│   │   ├── NaarNoor.API/       # Web API layer
+│   │   ├── NaarNoor.Application/  # Business logic
+│   │   ├── NaarNoor.Infrastructure/ # Data access
+│   │   └── NaarNoor.Domain/    # Domain entities
+│   └── NaarNoor.sln
+│
+├── naar-noor/                  # Angular Frontend
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/
+│   │   │   ├── pages/
+│   │   │   ├── services/
+│   │   │   └── app.config.ts
+│   │   ├── environments/
+│   │   └── styles.css
+│   └── package.json
+│
+├── docs/                       # Documentation
+│   ├── API.md
+│   ├── ARCHITECTURE.md
+│   ├── BACKEND.md
+│   ├── DATABASE.md
+│   ├── DEPLOYMENT.md
+│   ├── FRONTEND.md
+│   ├── GETTING_STARTED.md
+│   ├── PROJECT_STRUCTURE.md
+│   └── TROUBLESHOOTING.md
+│
+└── README.md                   # This file
+```
+
+---
+
+## 🔌 API Endpoints
+
+### Core Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/chefs` | Get all chefs |
+| `GET` | `/api/menu` | Get menu items |
+| `GET` | `/api/reviews` | Get approved reviews |
+| `POST` | `/api/reservations` | Create reservation |
+| `POST` | `/api/orders` | Create order |
+| `POST` | `/api/contact` | Submit inquiry |
+| `GET` | `/health` | Health check |
+
+📖 **Full API Documentation**: [API.md](docs/API.md)
+
+---
+
+## 🛠️ Development
+
+### Build Frontend
+```bash
+cd naar-noor
+npm run build
+```
+
+### Build Backend
+```bash
+cd api-server
+dotnet build
+```
+
+### Run Tests
+```bash
+# Frontend
+cd naar-noor
+npm test
+
+# Backend
+cd api-server
+dotnet test
+```
+
+---
+
+## 🚀 Deployment
+
+### Frontend (Vercel)
+```bash
+# Automatic deployment on push to main
+# https://naar-noor.vercel.app
+```
+
+### Backend (Azure/Custom)
+```bash
+# See docs/DEPLOYMENT.md for detailed instructions
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
+
+---
+
+## 📞 Support
+
+- 📖 **Documentation**: Check [docs/](docs/) folder
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Mostafa-SAID7/Naar-Noor/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Mostafa-SAID7/Naar-Noor/discussions)
+
+---
+
+## 🎉 Acknowledgments
+
+- Built with ❤️ by the Naar & Noor team
+- Inspired by modern restaurant management practices
+- Thanks to all contributors and supporters
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#-naar--noor)**
+
+Made with ❤️ | [GitHub](https://github.com/Mostafa-SAID7/Naar-Noor) | [Live Demo](https://naar-noor.vercel.app)
+
+</div>
